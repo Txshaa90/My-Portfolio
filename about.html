@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Trisha Caisip</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-hero {
+            padding: 120px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-section {
+            padding: 60px 20px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image-wrapper {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 20px;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+
+        .about-image-inner {
+            width: 100%;
+            height: 100%;
+            background: var(--card-bg);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            color: var(--text-secondary);
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-text p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .experience-section {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        .experience-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: 3px solid var(--dark-bg);
+        }
+
+        .timeline-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-company {
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .experience-section {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TC</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1>About <span class="highlight">Me</span></h1>
+        <p>Get to know more about my journey and experience</p>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-inner">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Hi, I'm Trisha Caisip</h2>
+                    <p>
+                        I'm a passionate Computer Science graduate currently working as a Web Developer at Rapid Revver Brands 
+                        and as a Virtual Assistant. With a strong foundation in full-stack web development and e-commerce operations, 
+                        I specialize in building modern web applications using React, Next.js, Node.js, and MySQL.
+                    </p>
+                    <p>
+                        My journey in tech has been driven by a love for creating user-friendly experiences and solving complex 
+                        problems through code. I've demonstrated expertise in creating database management systems, responsive 
+                        websites, and business applications through hands-on development projects.
+                    </p>
+                    <p>
+                        I'm proficient in remote work environments, consistently meeting expectations and deadlines. My experience 
+                        spans across inventory management, customer service operations, e-commerce platform management, and 
+                        virtual assistance, making me a versatile professional in the digital workspace.
+                    </p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h2>Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Web Developer</h3>
+                        <div class="timeline-date">Aug 2025 - Present</div>
+                        <div class="timeline-company">Rapid Revver Brands (Remote)</div>
+                        <p class="timeline-description">
+                            Develop and maintain web applications using modern technologies including React, Next.js, and Node.js. 
+                            Create RESTful APIs and integrate backend services with MySQL databases. Collaborate with team members 
+                            to deliver high-quality web solutions and implement responsive user interfaces.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Virtual Assistant</h3>
+                        <div class="timeline-date">Aug 2025 - Present</div>
+                        <div class="timeline-company">Remote</div>
+                        <p class="timeline-description">
+                            Process customer refunds and returns accurately following platform procedures. Monitor and review 
+                            online order tracking and performance reports. Update and clean product listings on eBay based on 
+                            instructions or pricing strategy. Track and verify work activity using Hubstaff for time and 
+                            productivity monitoring.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Freelance Data Entry and Image Coordinator</h3>
+                        <div class="timeline-date">Jun 2024 - Mar 2024</div>
+                        <div class="timeline-company">Freelance / Remote</div>
+                        <p class="timeline-description">
+                            Provided support in managing and organizing product databases, ensuring accurate data entry for 
+                            automotive parts and categories. Integrated product details, e.g., brand ID, model, title, formats, 
+                            and automated into the website for streamlined operations.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Data & Web Operations Intern</h3>
+                        <div class="timeline-date">March 2023 - June 2023</div>
+                        <div class="timeline-company">OnePacificHub.com / Rapid Revver LLC (Remote)</div>
+                        <p class="timeline-description">
+                            Managed inventory and product details, e.g., brand ID, model, title, formats, and automated into 
+                            the website for streamlined operations. Integrated product details and resolved backend issues, 
+                            including 404s, resource errors and plugin conflicts. Uploaded and formatted product images, 
+                            ensuring quality optimization and proper alignment with WooCommerce requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Trisha Caisip. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
