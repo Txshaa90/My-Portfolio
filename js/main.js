@@ -65,10 +65,9 @@ document.querySelectorAll('.project-card, .skill-card, .about-content').forEach(
 });
 
 // EmailJS Configuration
-// Replace these with your actual EmailJS credentials
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'; // Get from EmailJS dashboard
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'; // Get from EmailJS dashboard
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'; // Get from EmailJS dashboard
+const EMAILJS_PUBLIC_KEY = 't-bxN5QeRJDu785Py';
+const EMAILJS_SERVICE_ID = 'service_fp09zt6';
+const EMAILJS_TEMPLATE_ID = 'template_h9gk1nl';
 
 // Initialize EmailJS
 if (typeof emailjs !== 'undefined') {
@@ -104,9 +103,8 @@ if (contactForm) {
         
         // Send email using EmailJS
         const templateParams = {
-            from_name: name,
-            from_email: email,
-            subject: subject || 'New Contact Form Message',
+            name: name,
+            time: new Date().toLocaleString(),
             message: message
         };
         
