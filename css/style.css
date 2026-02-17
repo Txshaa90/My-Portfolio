@@ -395,6 +395,7 @@ body {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s;
+    z-index: 10;
 }
 
 .project-card:hover .project-overlay {
