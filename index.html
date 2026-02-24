@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trisha Caisip - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TC</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Trisha Caisip</span>
+                </h1>
+                <h2 class="hero-subtitle">Web Developer & Virtual Assistant</h2>
+                <p class="hero-description">
+                    I build modern web applications and provide professional virtual assistance. 
+                    Specializing in React, Next.js, and full-stack development with a passion for creating 
+                    user-friendly experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Txshaa90" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:trishacaisipl@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Check out some of my recent work</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        <div style="text-align: center; color: white; z-index: 1;">
+                            <i class="fas fa-database" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.9;"></i>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin: 0;">DataMotionPro</h3>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects.html" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DataMotionPro</h3>
+                        <p>Full-stack database management application with spreadsheet-like interface</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Zustand</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        <div style="text-align: center; color: white; z-index: 1;">
+                            <i class="fas fa-globe" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.9;"></i>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin: 0;">OnePacificHub</h3>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects.html" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>OnePacificHub Website</h3>
+                        <p>Modern responsive website with smooth animations and professional design</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Framer Motion</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        <div style="text-align: center; color: white; z-index: 1;">
+                            <i class="fas fa-file-invoice-dollar" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.9;"></i>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin: 0;">Payslip System</h3>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects.html" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Rapid Revver Payslip System</h3>
+                        <p>Employee payroll management system with PDF generation</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="projects.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Trisha Caisip. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Trisha Caisip</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .projects-hero {
+            padding: 120px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .projects-section {
+            padding: 60px 20px;
+        }
+
+        .project-detail {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .project-detail:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .project-header h2 {
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link-btn {
+            padding: 0.625rem 1.25rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .project-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .project-type {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 20px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .project-features {
+            margin-bottom: 2rem;
+        }
+
+        .project-features h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-tag {
+            padding: 0.5rem 1rem;
+            background: var(--darker-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .project-preview {
+            width: 100%;
+            height: 300px;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-preview-content {
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .project-preview-content i {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .project-preview-content h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .projects-hero h1 {
+                font-size: 2rem;
+            }
+
+            .project-detail {
+                padding: 1.5rem;
+            }
+
+            .project-header {
+                flex-direction: column;
+            }
+
+            .project-links {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TC</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-hero">
+        <h1>My <span class="highlight">Projects</span></h1>
+        <p>Explore my portfolio of web applications built with modern technologies</p>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <div class="project-detail">
+                <div class="project-preview" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="project-preview-content">
+                        <i class="fas fa-database"></i>
+                        <h3>DataMotionPro</h3>
+                    </div>
+                </div>
+                <div class="project-header">
+                    <div>
+                        <h2>DataMotionPro</h2>
+                        <span class="project-type">Full-Stack Database Management</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://datamotionpro.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            <i class="fas fa-external-link-alt"></i> View Live Site
+                        </a>
+                    </div>
+                </div>
+
+                <p class="project-description">
+                    A comprehensive full-stack database management application with a spreadsheet-like interface 
+                    that combines the simplicity of spreadsheets with the power of real databases. Built with 
+                    enterprise-grade security and real-time collaboration features.
+                </p>
+
+                <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul class="features-list">
+                        <li>Multiple view types: Grid, Gallery, Form, and Kanban views for flexible data visualization</li>
+                        <li>Advanced filtering system with multiple operators for complex data queries</li>
+                        <li>Multi-column sorting and grouping capabilities</li>
+                        <li>Real-time collaboration with team members</li>
+                        <li>Role-based access control for enterprise security</li>
+                        <li>RESTful API routes ready for backend integration</li>
+                        <li>Dark mode support with system preference detection</li>
+                        <li>CSV/JSON import and export functionality</li>
+                        <li>Persistent storage with Zustand and localStorage</li>
+                        <li>Real-time search across all columns</li>
+                        <li>Enhanced column types: Text, Number, Date, Select, Checkbox, Email, URL</li>
+                    </ul>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fas fa-code"></i> Next.js 14</span>
+                    <span class="tech-tag"><i class="fab fa-js"></i> TypeScript</span>
+                    <span class="tech-tag"><i class="fas fa-paint-brush"></i> TailwindCSS</span>
+                    <span class="tech-tag"><i class="fas fa-layer-group"></i> Radix UI</span>
+                    <span class="tech-tag"><i class="fas fa-cube"></i> shadcn/ui</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> Zustand</span>
+                    <span class="tech-tag"><i class="fas fa-icons"></i> Lucide React</span>
+                </div>
+            </div>
+
+            <div class="project-detail">
+                <div class="project-preview" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="project-preview-content">
+                        <i class="fas fa-globe"></i>
+                        <h3>OnePacificHub</h3>
+                    </div>
+                </div>
+                <div class="project-header">
+                    <div>
+                        <h2>OnePacificHub Website</h2>
+                        <span class="project-type">Modern Responsive Website</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://onepacifichub.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            <i class="fas fa-external-link-alt"></i> View Live Site
+                        </a>
+                    </div>
+                </div>
+
+                <p class="project-description">
+                    An improved website for OnePacificHub featuring modern design principles, smooth animations, 
+                    and optimized performance. Built with React and Framer Motion to deliver an engaging user 
+                    experience with professional aesthetics.
+                </p>
+
+                <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul class="features-list">
+                        <li>Clean, contemporary UI with gradient accents and professional color scheme</li>
+                        <li>Fully responsive design optimized for all devices</li>
+                        <li>Framer Motion powered animations for smooth transitions</li>
+                        <li>Scroll-triggered animations for engaging content reveals</li>
+                        <li>Hover effects and interactive elements throughout</li>
+                        <li>Floating elements and parallax effects for depth</li>
+                        <li>Sticky navigation with scroll effects</li>
+                        <li>Mobile-responsive hamburger menu</li>
+                        <li>Card-based layout for better content organization</li>
+                        <li>Improved typography and spacing for better readability</li>
+                        <li>Clear call-to-action buttons and better content hierarchy</li>
+                    </ul>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-react"></i> React 18</span>
+                    <span class="tech-tag"><i class="fas fa-bolt"></i> Vite</span>
+                    <span class="tech-tag"><i class="fas fa-paint-brush"></i> Tailwind CSS</span>
+                    <span class="tech-tag"><i class="fas fa-magic"></i> Framer Motion</span>
+                    <span class="tech-tag"><i class="fas fa-icons"></i> Lucide React</span>
+                </div>
+            </div>
+
+            <div class="project-detail">
+                <div class="project-preview" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="project-preview-content">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <h3>Payslip System</h3>
+                    </div>
+                </div>
+                <div class="project-header">
+                    <div>
+                        <h2>Rapid Revver Payslip System</h2>
+                        <span class="project-type">Employee Payroll Management</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Txshaa90/Rapid-Revver-Payslip" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <p class="project-description">
+                    A comprehensive employee payroll management system with professional PDF generation capabilities. 
+                    Features separate admin and employee portals with secure authentication and detailed payslip 
+                    management functionality.
+                </p>
+
+                <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul class="features-list">
+                        <li>Admin dashboard for managing employees and generating payslips</li>
+                        <li>Custom earnings and deductions with flexible configuration</li>
+                        <li>Professional PDF generation with detailed breakdown</li>
+                        <li>Employee portal for viewing and downloading personal payslips</li>
+                        <li>Secure JWT authentication for both admin and employee access</li>
+                        <li>Automatic calculations for gross pay, deductions, and net pay</li>
+                        <li>Unique payslip numbers and pay period tracking</li>
+                        <li>Audit trail for all administrative actions</li>
+                        <li>Secure access control ensuring employees only see their own data</li>
+                        <li>MySQL database for reliable data storage</li>
+                        <li>Modern blue-themed UI with Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-react"></i> React 18</span>
+                    <span class="tech-tag"><i class="fas fa-route"></i> React Router v6</span>
+                    <span class="tech-tag"><i class="fas fa-paint-brush"></i> Tailwind CSS</span>
+                    <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i> Express.js</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                    <span class="tech-tag"><i class="fas fa-lock"></i> JWT Auth</span>
+                    <span class="tech-tag"><i class="fas fa-file-pdf"></i> Puppeteer</span>
+                    <span class="tech-tag"><i class="fas fa-shield-alt"></i> bcryptjs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Trisha Caisip. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
