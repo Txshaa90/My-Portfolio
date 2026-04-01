@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
         return;
     }
 
-    if (document.body.classList.contains('home-page')) {
+    if (document.body.classList.contains('portfolio-theme')) {
         navbar.classList.toggle('scrolled', window.scrollY > 40);
         return;
     }
@@ -66,7 +66,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.project-card, .skill-card, .about-content').forEach(el => {
+document.querySelectorAll('.project-card, .skill-card, .about-content, .reveal-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
