@@ -34,6 +34,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Navbar Background on Scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) {
+        return;
+    }
+
+    if (document.body.classList.contains('home-page')) {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+        return;
+    }
+
     if (window.scrollY > 50) {
         navbar.style.background = 'rgba(10, 10, 20, 0.98)';
     } else {
