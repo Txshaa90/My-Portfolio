@@ -230,11 +230,42 @@ a {
     box-shadow: var(--shadow);
 }
 
+.photo-stack {
+    position: relative;
+}
+
 .hero-illustration {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 1.5rem;
+}
+
+.hero-photo-main {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 18%;
+    animation: floatPortrait 5.5s ease-in-out infinite;
+}
+
+.dog-sticker,
+.about-dog-accent {
+    position: absolute;
+    right: -12px;
+    bottom: -18px;
+    width: clamp(92px, 16vw, 130px);
+    padding: 0.45rem;
+    border-radius: 1.25rem;
+    background: rgba(255, 250, 241, 0.9);
+    border: 1px solid var(--line-strong);
+    box-shadow: 0 16px 30px rgba(79, 104, 64, 0.14);
+    animation: floatSticker 4.2s ease-in-out infinite;
+}
+
+.dog-gif {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .btn {
@@ -289,6 +320,10 @@ a {
     align-items: start;
 }
 
+.about-grid {
+    grid-template-columns: minmax(280px, 0.8fr) repeat(2, minmax(0, 1fr));
+}
+
 .feature-panel,
 .soft-card,
 .project-panel,
@@ -327,6 +362,25 @@ a {
 
 .feature-panel p + p {
     margin-top: 1rem;
+}
+
+.photo-panel {
+    overflow: visible;
+}
+
+.about-photo-wrap {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.about-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    border: 1px solid var(--line);
+    box-shadow: 0 16px 36px rgba(74, 92, 57, 0.1);
 }
 
 .clean-list {
@@ -537,6 +591,24 @@ a {
     box-shadow: 0 22px 50px rgba(74, 92, 57, 0.11);
 }
 
+@keyframes floatPortrait {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes floatSticker {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-6px) rotate(-3deg);
+    }
+}
+
 .footer {
     padding: 2rem 0 2.5rem;
     border-top: 1px solid var(--line);
@@ -551,6 +623,7 @@ a {
 @media (max-width: 900px) {
     .editorial-grid,
     .hero-layout,
+    .about-grid,
     .card-grid-three,
     .contact-layout,
     .timeline-clean-item {
@@ -563,6 +636,12 @@ a {
 
     .project-panel-top {
         flex-direction: column;
+    }
+
+    .dog-sticker,
+    .about-dog-accent {
+        right: 12px;
+        bottom: 12px;
     }
 }
 
