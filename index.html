@@ -11,16 +11,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="portfolio-theme home-page">
-    <nav class="navbar">
+<body class="portfolio-theme home-editorial">
+    <nav class="navbar editorial-navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">TC</a>
+            <a href="#top" class="logo editorial-logo">TC</a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link">About me</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Get in touch!</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -30,137 +29,234 @@
         </div>
     </nav>
 
-    <main class="site-shell">
-        <section class="page-hero home-hero">
-            <div class="page-hero-inner">
-                <div class="home-poster reveal-card">
-                    <div class="poster-topline">
-                        <span>TC</span>
-                        <span>2026</span>
+    <main class="editorial-home" id="top">
+        <section class="editorial-hero">
+            <div class="editorial-hero-shell reveal-card">
+                <div class="hero-copy">
+                    <p class="hero-kicker">Developer portfolio</p>
+                    <h1 class="hero-title">PORTFOLIO</h1>
+                    <div class="hero-outline-stack" aria-hidden="true">
+                        <span>PORTFOLIO</span>
+                        <span>PORTFOLIO</span>
+                        <span>PORTFOLIO</span>
                     </div>
-
-                    <div class="poster-heading">
-                        <p class="page-eyebrow">Developer Portfolio</p>
-                        <h1 class="poster-title">
-                            <span class="poster-dark">PORT</span><span class="poster-accent">FOLIO</span>
-                        </h1>
-                        <div class="poster-meta">
-                            <span>Web Developer</span>
-                            <span>Virtual Assistant</span>
-                            <span>Matcha Edition</span>
-                        </div>
+                    <div class="hero-links">
+                        <span>BE: /trishacaisip</span>
+                        <span>IG: @trish.codes</span>
+                        <span>LI: /in/trishacaisip</span>
                     </div>
-
-                    <div class="poster-scene">
-                        <img src="images/dog-chibi-walk.gif" alt="Chibi dog walking animation" class="dog-walk-gif">
-                        <div class="mushroom mushroom-left"></div>
-                        <div class="mushroom mushroom-center"></div>
-                        <div class="mushroom mushroom-right"></div>
-                        <div class="snail snail-left"></div>
-                        <div class="snail snail-center"></div>
-                        <div class="grass grass-left"></div>
-                        <div class="grass grass-center"></div>
-                        <div class="grass grass-right"></div>
-                    </div>
-                </div>
-
-                <div class="home-summary">
-                    <p class="page-intro">
-                        I'm Trisha Caisip, a web developer and virtual assistant creating calm, polished digital work with a soft editorial style and a playful matcha palette.
+                    <p class="hero-note">
+                        I build responsive websites and organized digital workflows with a calm visual style, clear hierarchy, and practical execution.
                     </p>
-                    <div class="hero-actions">
-                        <a href="projects.html" class="btn btn-primary">View Projects</a>
-                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                </div>
+
+                <div class="hero-artboard">
+                    <div class="hero-star hero-star-a"></div>
+                    <div class="hero-star hero-star-b"></div>
+                    <div class="hero-portrait-card">
+                        <div class="hero-portrait-figure">
+                            <div class="portrait-glow"></div>
+                            <div class="portrait-silhouette">
+                                <span class="silhouette-hair"></span>
+                                <span class="silhouette-head"></span>
+                                <span class="silhouette-neck"></span>
+                                <span class="silhouette-body"></span>
+                                <span class="silhouette-arm"></span>
+                            </div>
+                        </div>
+                        <div class="hero-caption">Web Developer / Virtual Assistant / Philippines</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="editorial-grid">
-                    <article class="feature-panel reveal-card">
-                        <p class="section-kicker">Introduction</p>
-                        <h2>Quietly confident work, built with care.</h2>
-                        <p>
-                            I build responsive interfaces, support business workflows, and turn project needs into usable systems.
-                            My work blends technical execution with organization, communication, and attention to detail.
-                        </p>
-                    </article>
+        <section class="hero-divider">
+            <div class="scroll-badge">
+                <span>Scroll</span>
+                <span>down</span>
+            </div>
+        </section>
 
-                    <article class="feature-panel reveal-card">
-                        <p class="section-kicker">Current Focus</p>
-                        <ul class="clean-list">
-                            <li>Frontend development with React, Next.js, and JavaScript</li>
-                            <li>Virtual assistance and e-commerce support operations</li>
-                            <li>Clean UI styling, documentation, and workflow organization</li>
+        <section class="intro-section" id="about">
+            <div class="intro-grid">
+                <div class="intro-copy reveal-card">
+                    <p class="mini-brand">TC</p>
+                    <h2>Hello,<br>I'm Trisha.</h2>
+                    <p>
+                        I am a web developer and virtual assistant based in the Philippines. I focus on clean interfaces,
+                        organized workflows, and digital work that is easy to maintain after launch.
+                    </p>
+                    <p>
+                        My projects usually sit between frontend implementation, business support, and practical design
+                        decisions that help people use a product without friction.
+                    </p>
+                    <a href="#contact" class="profile-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>trisha.caisip.dev@gmail.com</span>
+                    </a>
+                </div>
+
+                <div class="profile-card reveal-card">
+                    <div class="profile-visual">
+                        <div class="profile-ring"></div>
+                        <div class="profile-silhouette">
+                            <span class="profile-hair"></span>
+                            <span class="profile-face"></span>
+                            <span class="profile-shirt"></span>
+                        </div>
+                    </div>
+                    <div class="profile-pill profile-pill-top">Based in the Philippines</div>
+                    <div class="profile-pill profile-pill-bottom">Frontend + Operations</div>
+                    <div class="contact-card" id="contact">
+                        <h3>Contact</h3>
+                        <ul class="contact-card-list">
+                            <li><i class="fa-solid fa-location-dot"></i> Philippines</li>
+                            <li><i class="fa-solid fa-envelope"></i> trisha.caisip.dev@gmail.com</li>
+                            <li><i class="fa-solid fa-phone"></i> Available on request</li>
                         </ul>
-                    </article>
-                </div>
-
-                <div class="stats-strip reveal-card">
-                    <div class="stat-item">
-                        <strong>3+</strong>
-                        <span>Featured projects</span>
-                    </div>
-                    <div class="stat-item">
-                        <strong>2+</strong>
-                        <span>Years of experience</span>
-                    </div>
-                    <div class="stat-item">
-                        <strong>10+</strong>
-                        <span>Tools and technologies</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="content-section section-soft">
-            <div class="container">
-                <div class="section-heading-block">
-                    <p class="section-kicker">Selected Work</p>
-                    <h2>Projects that reflect my development style.</h2>
-                </div>
-
-                <div class="card-grid card-grid-three">
-                    <article class="soft-card reveal-card">
-                        <p class="card-number">01</p>
-                        <h3>DataMotionPro</h3>
-                        <p>Database management experience with a spreadsheet-like interface and structured workflows.</p>
-                        <div class="tag-row">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Zustand</span>
+        <section class="resume-section" id="resume">
+            <div class="resume-grid">
+                <article class="resume-panel resume-panel-education reveal-card">
+                    <h2>Education</h2>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <span class="resume-year">2024 - 2026</span>
+                            <div>
+                                <h3>Self-led Web Development Track</h3>
+                                <p>Focused on modern frontend tools, UI implementation, and project workflow skills.</p>
+                            </div>
                         </div>
-                    </article>
-
-                    <article class="soft-card reveal-card">
-                        <p class="card-number">02</p>
-                        <h3>OnePacificHub</h3>
-                        <p>Responsive website work focused on clarity, hierarchy, and clean interaction design.</p>
-                        <div class="tag-row">
-                            <span class="tag">React</span>
-                            <span class="tag">Framer Motion</span>
-                            <span class="tag">Tailwind</span>
+                        <div class="resume-item">
+                            <span class="resume-year">2023 - 2024</span>
+                            <div>
+                                <h3>Virtual Assistance and Digital Support</h3>
+                                <p>Documentation, client coordination, research, and e-commerce support practice.</p>
+                            </div>
                         </div>
-                    </article>
-
-                    <article class="soft-card reveal-card">
-                        <p class="card-number">03</p>
-                        <h3>Rapid Revver</h3>
-                        <p>Payslip system with secure document generation and organized employee-facing workflows.</p>
-                        <div class="tag-row">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">PDF</span>
+                        <div class="resume-item">
+                            <span class="resume-year">Ongoing</span>
+                            <div>
+                                <h3>Independent Project Building</h3>
+                                <p>Shipping portfolio work and improving quality through real site builds and revisions.</p>
+                            </div>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
+
+                <article class="resume-panel resume-panel-skills reveal-card">
+                    <div class="resume-ghost" aria-hidden="true">
+                        <span>RESUME</span>
+                        <span>RESUME</span>
+                        <span>RESUME</span>
+                    </div>
+                    <h2>Technical skills</h2>
+                    <div class="skill-columns">
+                        <div>
+                            <h3>Software Skills</h3>
+                            <div class="icon-chip-row">
+                                <span class="icon-chip">Ps</span>
+                                <span class="icon-chip">Ai</span>
+                                <span class="icon-chip">Figma</span>
+                                <span class="icon-chip">Notion</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Coding Skills</h3>
+                            <ul class="skill-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Next.js</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chip-cloud">
+                        <span>UI Implementation</span>
+                        <span>Visual Design</span>
+                        <span>Responsive Layouts</span>
+                        <span>Research</span>
+                    </div>
+                </article>
+
+                <article class="experience-panel reveal-card" id="work">
+                    <h2>Experience</h2>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <span class="resume-year">2026</span>
+                            <div>
+                                <h3>Portfolio and Client Website Builds</h3>
+                                <p>Built and refined personal and client-facing pages with strong emphasis on presentation and responsiveness.</p>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <span class="resume-year">2025</span>
+                            <div>
+                                <h3>Virtual Assistant Work</h3>
+                                <p>Supported admin, communication, and information organization for ongoing digital tasks.</p>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <span class="resume-year">2024</span>
+                            <div>
+                                <h3>Frontend Practice Projects</h3>
+                                <p>Created interfaces, reusable sections, and layout systems while learning production habits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chip-cloud chip-cloud-dark">
+                        <span>#Communication</span>
+                        <span>#DetailOriented</span>
+                        <span>#Adaptability</span>
+                    </div>
+                </article>
+
+                <article class="resume-panel resume-panel-language reveal-card">
+                    <h2>Language</h2>
+                    <div class="language-grid">
+                        <div>
+                            <h3>English</h3>
+                            <p>Professional working proficiency</p>
+                        </div>
+                        <div>
+                            <h3>Filipino</h3>
+                            <p>Native</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="resume-panel resume-panel-hobbies reveal-card">
+                    <h2>Hobbies &amp; Interests</h2>
+                    <div class="hobby-grid">
+                        <div class="hobby-item">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Website Design</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Graphic Styling</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>Dog Content</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Learning Tools</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer editorial-footer">
         <div class="container">
             <p>&copy; 2026 Trisha Caisip. All rights reserved.</p>
         </div>

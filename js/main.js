@@ -34,11 +34,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Navbar Background on Scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 10, 20, 0.98)';
-    } else {
-        navbar.style.background = 'rgba(10, 10, 20, 0.95)';
+    if (!navbar) {
+        return;
     }
+
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
 // Intersection Observer for Animations
@@ -57,7 +57,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.project-card, .skill-card, .about-content').forEach(el => {
+document.querySelectorAll('.project-card, .skill-card, .about-content, .reveal-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
