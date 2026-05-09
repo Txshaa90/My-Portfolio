@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trisha Caisip - Web Developer Portfolio</title>
     <link rel="icon" type="image/png" href="FAVICON.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="portfolio-theme home-page">
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">TC</a>
@@ -27,132 +30,135 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Trisha Caisip</span>
-                </h1>
-                <h2 class="hero-subtitle">Web Developer & Virtual Assistant</h2>
-                <p class="hero-description">
-                    I build modern web applications and provide professional virtual assistance. 
-                    Specializing in React, Next.js, and full-stack development with a passion for creating 
-                    user-friendly experiences.
-                </p>
-                <div class="hero-buttons">
-                    <a href="projects.html" class="btn btn-primary">View My Work</a>
-                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Txshaa90" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:trishacaisipl@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <div class="floating-card card-1">
-                        <i class="fas fa-code"></i>
-                        <span>React</span>
+    <main class="site-shell">
+        <section class="page-hero home-hero">
+            <div class="page-hero-inner">
+                <div class="home-poster reveal-card">
+                    <div class="poster-topline">
+                        <span>TC</span>
+                        <span>2026</span>
                     </div>
-                    <div class="floating-card card-2">
-                        <i class="fas fa-database"></i>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="floating-card card-3">
-                        <i class="fab fa-node-js"></i>
-                        <span>Node.js</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
 
-    <section class="featured-projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Check out some of my recent work</p>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div style="text-align: center; color: white; z-index: 1;">
-                            <i class="fas fa-database" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.9;"></i>
-                            <h3 style="font-size: 1.5rem; font-weight: 700; margin: 0;">DataMotionPro</h3>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="projects.html" class="project-link">View Details</a>
+                    <div class="poster-heading">
+                        <p class="page-eyebrow">Developer Portfolio</p>
+                        <h1 class="poster-title">
+                            <span class="poster-dark">PORT</span><span class="poster-accent">FOLIO</span>
+                        </h1>
+                        <div class="poster-meta">
+                            <span>Web Developer</span>
+                            <span>Virtual Assistant</span>
+                            <span>Matcha Edition</span>
                         </div>
                     </div>
-                    <div class="project-info">
+
+                    <div class="poster-scene">
+                        <img src="images/dog-chibi-walk.gif" alt="Chibi dog walking animation" class="dog-walk-gif">
+                        <div class="mushroom mushroom-left"></div>
+                        <div class="mushroom mushroom-center"></div>
+                        <div class="mushroom mushroom-right"></div>
+                        <div class="snail snail-left"></div>
+                        <div class="snail snail-center"></div>
+                        <div class="grass grass-left"></div>
+                        <div class="grass grass-center"></div>
+                        <div class="grass grass-right"></div>
+                    </div>
+                </div>
+
+                <div class="home-summary">
+                    <p class="page-intro">
+                        I'm Trisha Caisip, a web developer and virtual assistant creating calm, polished digital work with a soft editorial style and a playful matcha palette.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="editorial-grid">
+                    <article class="feature-panel reveal-card">
+                        <p class="section-kicker">Introduction</p>
+                        <h2>Quietly confident work, built with care.</h2>
+                        <p>
+                            I build responsive interfaces, support business workflows, and turn project needs into usable systems.
+                            My work blends technical execution with organization, communication, and attention to detail.
+                        </p>
+                    </article>
+
+                    <article class="feature-panel reveal-card">
+                        <p class="section-kicker">Current Focus</p>
+                        <ul class="clean-list">
+                            <li>Frontend development with React, Next.js, and JavaScript</li>
+                            <li>Virtual assistance and e-commerce support operations</li>
+                            <li>Clean UI styling, documentation, and workflow organization</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="stats-strip reveal-card">
+                    <div class="stat-item">
+                        <strong>3+</strong>
+                        <span>Featured projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>2+</strong>
+                        <span>Years of experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>10+</strong>
+                        <span>Tools and technologies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section section-soft">
+            <div class="container">
+                <div class="section-heading-block">
+                    <p class="section-kicker">Selected Work</p>
+                    <h2>Projects that reflect my development style.</h2>
+                </div>
+
+                <div class="card-grid card-grid-three">
+                    <article class="soft-card reveal-card">
+                        <p class="card-number">01</p>
                         <h3>DataMotionPro</h3>
-                        <p>Full-stack database management application with spreadsheet-like interface</p>
-                        <div class="project-tags">
+                        <p>Database management experience with a spreadsheet-like interface and structured workflows.</p>
+                        <div class="tag-row">
                             <span class="tag">Next.js</span>
                             <span class="tag">TypeScript</span>
                             <span class="tag">Zustand</span>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div style="text-align: center; color: white; z-index: 1;">
-                            <i class="fas fa-globe" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.9;"></i>
-                            <h3 style="font-size: 1.5rem; font-weight: 700; margin: 0;">OnePacificHub</h3>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="projects.html" class="project-link">View Details</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>OnePacificHub Website</h3>
-                        <p>Modern responsive website with smooth animations and professional design</p>
-                        <div class="project-tags">
+                    <article class="soft-card reveal-card">
+                        <p class="card-number">02</p>
+                        <h3>OnePacificHub</h3>
+                        <p>Responsive website work focused on clarity, hierarchy, and clean interaction design.</p>
+                        <div class="tag-row">
                             <span class="tag">React</span>
                             <span class="tag">Framer Motion</span>
                             <span class="tag">Tailwind</span>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div style="text-align: center; color: white; z-index: 1;">
-                            <i class="fas fa-file-invoice-dollar" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.9;"></i>
-                            <h3 style="font-size: 1.5rem; font-weight: 700; margin: 0;">Payslip System</h3>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="projects.html" class="project-link">View Details</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Rapid Revver Payslip System</h3>
-                        <p>Employee payroll management system with PDF generation</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
+                    <article class="soft-card reveal-card">
+                        <p class="card-number">03</p>
+                        <h3>Rapid Revver</h3>
+                        <p>Payslip system with secure document generation and organized employee-facing workflows.</p>
+                        <div class="tag-row">
                             <span class="tag">Node.js</span>
                             <span class="tag">MySQL</span>
+                            <span class="tag">PDF</span>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-
-            <div class="view-all">
-                <a href="projects.html" class="btn btn-outline">View All Projects</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
